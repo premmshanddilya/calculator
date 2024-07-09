@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type=" text" placeholder="0">
+        <div>
+            <BUtton>AC</BUtton>
+            <BUtton onclick="resultSummery = ''; document.querySelector('input').value = resultSummery;">DEL</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '%'; document.querySelector('input').value = resultSummery;">%</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '/'; document.querySelector('input').value = resultSummery;">/</BUtton>
+        </div>
+        <div>
+            <BUtton onclick="resultSummery = resultSummery + '7'; document.querySelector('input').value = resultSummery;">7</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '8'; document.querySelector('input').value = resultSummery;">8</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '9'; document.querySelector('input').value = resultSummery;">9</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '*'; document.querySelector('input').value = resultSummery;">*</BUtton>
+        </div>
+        <div>
+            <BUtton onclick="resultSummery = resultSummery + '4'; document.querySelector('input').value = resultSummery;">4</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '5'; document.querySelector('input').value = resultSummery;">5</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '6'; document.querySelector('input').value = resultSummery;">6</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '-'; document.querySelector('input').value = resultSummery;">-</BUtton>
+        </div>
+        <div>
+            <BUtton onclick="resultSummery = resultSummery + '1'; document.querySelector('input').value = resultSummery;">1</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '2'; document.querySelector('input').value = resultSummery;">2</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '3'; document.querySelector('input').value = resultSummery;">3</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '+'; document.querySelector('input').value = resultSummery;">+</BUtton>
+        </div>
+        <div>
+            <BUtton onclick="resultSummery = resultSummery + '00'; document.querySelector('input').value = resultSummery;">00</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '0'; document.querySelector('input').value = resultSummery;">0</BUtton>
+            <BUtton onclick="resultSummery = resultSummery + '.'; document.querySelector('input').value = resultSummery;">.</BUtton>
+            <BUtton class="color" onclick="let result = eval(resultSummery);
+            resultSummery = result; document.querySelector('input').value = resultSummery;">=</BUtton>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
